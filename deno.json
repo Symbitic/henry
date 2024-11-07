@@ -1,0 +1,11 @@
+{
+  "lock": false,
+  "tasks": {
+    "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
+    "start": "deno run -A main.ts"
+  },
+  "imports": {
+    "$std/": "https://deno.land/std@0.216.0/"
+  },
+  "nodeModulesDir": "auto"
+}

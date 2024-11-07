@@ -1,0 +1,25 @@
+{
+  "name": "henry",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:debian-12",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/deno:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "deno.enable": true,
+        "deno.lint": true,
+        "editor.defaultFormatter": "denoland.vscode-deno",
+        "search.exclude": {
+          "gitignore": true
+        },
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "denoland.vscode-deno",
+        "editorconfig.editorconfig"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
